@@ -1,0 +1,27 @@
+// any find without throw, doesn't care too much if nothing is found
+// with OrThrow, is a query that returns a result. Non-null value. 
+// findUnique - specifiy condition. Can query on any fields that are tagged as unique or pk. 
+// if trying to query on a non unique value, prisma will not allow that. so trying to query on name field
+
+// Table fields
+// If there is no ? after type definition, it is a required field 
+
+
+// Defining enums allows you to specify what values are allows to go into a field
+// So its like the equivlant of having like a reference / look up table. 
+
+
+
+// Steps
+// Change schema 
+// 1. npx prisma migrate dev --name <migration name>
+// 2. npx prisma generate
+// 3. npx prisma db seed
+
+
+// CRUD operations - done 
+// Find examples in muirburn project
+
+
+// Pointers 
+// To note: Updating an exisiting table if it has data in it 
