@@ -19,6 +19,16 @@ model User {
   email String @unique
   role UserRole
   age Int
+
+  jobPerformance JobPerformance[]
+}
+
+// Foreign key
+model JobPerformance {
+  id Int @id @default(autoincrement())
+  review String? @db.Text
+  userId Int
+  user   User @relation(fields: [userId], references: [id])
 }
 
 enum UserRole {

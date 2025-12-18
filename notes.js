@@ -11,17 +11,9 @@
 // So its like the equivlant of having like a reference / look up table. 
 
 
-
+// npx prisma studio - view
 // Steps
 // Change schema 
 // 1. npx prisma migrate dev --name <migration name>
 // 2. npx prisma generate
 // 3. npx prisma db seed
-
-
-// CRUD operations - done 
-// Find examples in muirburn project
-
-
-// Pointers 
-// To note: Updating an exisiting table if it has data in it 
